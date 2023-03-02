@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/shogi-lake.iml" filepath="$PROJECT_DIR$/shogi-lake.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shogi-lake.iml" filepath="$PROJECT_DIR$/.idea/shogi-lake.iml" />
     </modules>
   </component>
 </project>
