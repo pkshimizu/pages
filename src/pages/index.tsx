@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 import {FlexColumn, FlexRow} from "@/components/Flex";
 import Label from "@/components/Label";
 import Image from "next/image";
+import Button from "@/components/Button";
+import Link from "@/components/Link";
+import {GitHub, MailOutline} from "@mui/icons-material";
 
 
 export default function Home() {
@@ -30,15 +29,25 @@ export default function Home() {
             </FlexRow>
           </FlexRow>
           <FlexRow justify={"center"}>
-            <Label text={"ダウンロード"} />
+            <Button label={"ダウンロード"} />
           </FlexRow>
           <FlexColumn>
             <FlexRow justify={"center"}>
               <Label text={"お問い合わせ"} />
             </FlexRow>
             <FlexRow justify={"center"}>
-              <Label text={"GitHub"} />
-              <Label text={"Mail"} />
+              <Link href={"https://github.com/pkshimizu"}>
+                <FlexRow>
+                  <GitHub/>
+                  <Label text={"GitHub"} />
+                </FlexRow>
+              </Link>
+              <Link href={"mailto:shimizu.kenji@noncore.net"}>
+                <FlexRow>
+                  <MailOutline/>
+                  <Label text={"e-mail"} />
+                </FlexRow>
+              </Link>
             </FlexRow>
           </FlexColumn>
         </FlexColumn>
